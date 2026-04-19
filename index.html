@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>kanare.work</title>
+  <meta
+    name="description"
+    content="kanare の活動とプロダクトをまとめるサイトです。"
+  />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f4ec;
+      --surface: rgba(255, 255, 255, 0.78);
+      --text: #1f2937;
+      --muted: #5b6472;
+      --line: rgba(31, 41, 55, 0.12);
+      --accent: #0f766e;
+      --accent-strong: #115e59;
+      --shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+        sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.12), transparent 32%),
+        linear-gradient(180deg, #fbfaf6 0%, var(--bg) 100%);
+    }
+
+    .shell {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .hero {
+      padding: 24px 0 12px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent-strong);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+
+    .lead {
+      width: min(680px, 100%);
+      margin: 18px 0 0;
+      font-size: 1.08rem;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+      margin-top: 32px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--surface);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+    }
+
+    .card p {
+      margin: 0;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .button-secondary {
+      border-color: var(--line);
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    @media (min-width: 720px) {
+      .grid {
+        grid-template-columns: 1.25fr 0.95fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">kanare.work</p>
+      <h1>活動とプロダクトをまとめるトップページを準備中です。</h1>
+      <p class="lead">
+        このサイトでは、個人開発プロダクトや制作物を順次まとめて公開していきます。
+        現在は、Apple Watch ランナー向けアプリ StackAct の移行を進めています。
+      </p>
+    </section>
+
+    <section class="grid" aria-label="公開中の案内">
+      <article class="card">
+        <h2>StackAct</h2>
+        <p>
+          Apple Watch の純正ワークアウト記録を、過去の自分と比べながら振り返りやすくする
+          ランニングアプリです。公開ページは ` /stackact/ ` 配下へ移行予定です。
+        </p>
+        <div class="actions">
+          <a class="button button-primary" href="/stackact/">StackAct を見る</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>このトップについて</h2>
+        <p>
+          まずは最小構成で公開し、今後プロダクト一覧やプロフィール、各種リンクを追加する予定です。
+          ルートは活動全体の入口として使います。
+        </p>
+        <div class="actions">
+          <a class="button button-secondary" href="mailto:kanare.tech@gmail.com">連絡する</a>
+        </div>
+      </article>
+    </section>
+
+    <p class="footer">kanare.work</p>
+  </main>
+</body>
+</html>
