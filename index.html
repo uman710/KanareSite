@@ -6,7 +6,7 @@
   <title>kanare.work</title>
   <meta
     name="description"
-    content="kanare の活動とプロダクトをまとめるサイトです。"
+    content="kanare が個人開発している iPhone アプリと関連ページをまとめるサイトです。"
   />
   <link rel="canonical" href="https://kanare.work/" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -136,7 +136,7 @@
 
     @media (min-width: 720px) {
       .grid {
-        grid-template-columns: 1.25fr 0.95fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
   </style>
@@ -145,10 +145,10 @@
   <main class="shell">
     <section class="hero">
       <p class="eyebrow">kanare.work</p>
-      <h1>活動とプロダクトをまとめるトップページを準備中です。</h1>
+      <h1>個人開発している iPhone アプリと制作物をまとめています。</h1>
       <p class="lead">
-        このサイトでは、個人開発プロダクトや制作物を順次まとめて公開していきます。
-        現在は、Apple Watch ランナー向けアプリ StackAct の移行を進めています。
+        kanare.work では、個人開発しているアプリの紹介、サポート情報、関連ページを公開しています。
+        現在は、ランニング記録アプリ StackAct と、ペットをそっと見守るカメラアプリ SottoCam を掲載しています。
       </p>
     </section>
 
@@ -165,10 +165,20 @@
       </article>
 
       <article class="card">
+        <h2>SottoCam</h2>
+        <p>
+          別室やケージにいるペットを驚かせずに、同じ家の中からそっと様子を確認するための
+          シンプルな iPhone アプリです。公開ページは `/sottocam/` 配下で公開しています。
+        </p>
+        <div class="actions">
+          <a class="button button-primary" href="/sottocam/">SottoCam を見る</a>
+        </div>
+      </article>
+
+      <article class="card">
         <h2>このトップについて</h2>
         <p>
-          まずは最小構成で公開し、今後プロダクト一覧やプロフィール、各種リンクを追加する予定です。
-          ルートは活動全体の入口として使います。
+          ルートは各アプリの入口として使いながら、今後はプロフィールや制作物一覧も追加していく予定です。
         </p>
         <div class="actions">
           <a class="button button-secondary" href="mailto:kanare.tech@gmail.com">連絡する</a>
